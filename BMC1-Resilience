@@ -1,0 +1,33 @@
+## Post-Quantum Security & Long-Term Resilience
+
+The BMC1 ecosystem is designed with a forward-looking security model that
+acknowledges the long-term risks posed by advances in quantum computing.
+
+While current public blockchains rely on elliptic-curve cryptography,
+BMC1 adopts a layered architecture that minimizes long-lived cryptographic
+exposure and prioritizes quantum-resistant primitives where feasible.
+
+### Design Principles
+
+- Avoid reliance on long-term reusable signing keys
+- Prefer hash-based verification mechanisms
+- Separate identity, authorization, and execution layers
+- Enable future migration to post-quantum signature systems
+
+### Implementation Approach
+
+- Core smart contracts rely exclusively on hash functions and Merkle proofs
+- Authorization may be derived from off-chain or external post-quantum
+  signature systems
+- Execution logic remains blockchain-agnostic and upgrade-friendly
+- Optional anchoring to quantum-resistant ledgers (e.g., QRL) is supported
+
+### Security Posture
+
+This approach ensures:
+- Reduced exposure to future cryptographic breaks
+- Compatibility with existing blockchain infrastructure
+- A clear migration path toward fully post-quantum systems as standards mature
+
+BMC1 does not claim complete quantum immunity but is architected to adapt
+without disrupting real-world operations.
