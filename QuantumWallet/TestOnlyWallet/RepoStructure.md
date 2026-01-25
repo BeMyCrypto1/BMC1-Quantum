@@ -1,5 +1,6 @@
 
-# QuantumWallet/
+# QuantumWallet for Testing only purposes
+Does not include any of the Quantum resistant elements/
     
     ├── README.md
     ├── docs/
