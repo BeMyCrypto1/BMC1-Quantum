@@ -17,19 +17,19 @@ The core innovation: Two intertwined identities per user
 
 ## How It Works - Visual Flow
 
-  [User's Device]
-  |
-  |--- 🔐 QR-ID (PQC Master Keys)
-  |     |
-  |     |--(Derives via PQC-KDF)--> 💳 LBI-1 (ECDSA) → 0x123... (Ethereum)
-  |     |--(Derives via PQC-KDF)--> 💳 LBI-2 (ECDSA) → bc1q... (Bitcoin)
-  |     |--(Derives via PQC-KDF)--> 💳 LBI-3 (Ed25519) → 8x5g... (Solana)
-  |
-  |--- 🔄 Pre-Signed Migration Bundle
-  |
-  |--(Signed by QR-ID)--> "Move from LBI-1 to LBI-1'"
-  |--(Timestamped)--------> Quantum-Resistant Ledger (IOTA/QAN)
-  |--(Stored)------------> Distributed Storage (IPFS/P2P)
+    [User's Device]
+    |
+    |--- 🔐 QR-ID (PQC Master Keys)
+    |     |
+    |     |--(Derives via PQC-KDF)--> 💳 LBI-1 (ECDSA) → 0x123... (Ethereum)
+    |     |--(Derives via PQC-KDF)--> 💳 LBI-2 (ECDSA) → bc1q... (Bitcoin)
+    |     |--(Derives via PQC-KDF)--> 💳 LBI-3 (Ed25519) → 8x5g... (Solana)
+    |
+    |--- 🔄 Pre-Signed Migration Bundle
+    |
+    |--(Signed by QR-ID)--> "Move from LBI-1 to LBI-1'"
+    |--(Timestamped)--------> Quantum-Resistant Ledger (IOTA/QAN)
+    |--(Stored)------------> Distributed Storage (IPFS/P2P)
 
 
 ## Critical Sub-Systems
