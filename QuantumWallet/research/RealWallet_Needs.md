@@ -3,22 +3,15 @@
 A real crypto wallet needs or has:
 
 ✅ Secure key storage (encrypted, memory-protected)
-
 ✅ Transaction signing (send/receive crypto)
-
 ✅ Blockchain connection (check balances, gas prices)
-
 ✅ dApp connectivity (connect to websites)
-
 ✅ User interface (browser extension or app)
-
 ✅ Security features (phishing detection, confirmations)
-
 ✅ Backup/recovery (seed phrases, export)
-
 ✅ Multi-chain support (Ethereum, Polygon, etc.)
-
 ✅ Production testing (audited, bug-free)
+✅ Quantum resistance (our eventual goal)
 
 Also once the Wallet is Created the following steps can be checked, reviewed, debugged, fixed, deploy afterwards
 
@@ -44,5 +37,26 @@ Also once the Wallet is Created the following steps can be checked, reviewed, de
 ☐ [ ] Test with small amounts first
 ☐ [ ] Warn users: "Real money risk!"
 
-✅ Quantum resistance (our eventual goal)
+
+
+# How Deployment Actually Works:
+**Your wallet code can be deployed in THREE ways:**
+
+# Option A: Command Line Tool (Easiest)
+  What:    Users run node BMC1-Wallet.js in terminal
+  Where:   On their own computer
+  Cost:    $0
+  Example: Like running a Python script
+
+# Option B: Browser Extension (Like MetaMask)
+  What:     Chrome/Firefox extension users install
+  Where:    Chrome Web Store / Firefox Add-ons
+  Cost:     $5 one-time (developer fee)
+  Requires: Packaging code, submitting to stores
+
+# Option C: Mobile App
+  What:     iOS/Android app
+  Where:    App Store / Google Play
+  Cost:     $99/year (Apple) + $25 one-time (Google)
+  Requires: React Native conversion
 
