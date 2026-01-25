@@ -19,24 +19,27 @@
 
 ### Day 4-7: First Wallet Script
 Create `BMC1-wallet.js`:
-```javascript
-// Just generates an address - nothing more
-const ethers = require('ethers');
 
-// Create a wallet
-const wallet = ethers.Wallet.createRandom();
-console.log("Address:", wallet.address);
-console.log("Private Key:", wallet.privateKey);
-console.log("Mnemonic:", wallet.mnemonic.phrase);
+Javascript
+        
+        // Just generates an address - nothing more
+        
+        const ethers = require('ethers');
+        
+        // Create a wallet
+        const wallet = ethers.Wallet.createRandom();
+        console.log("Address:", wallet.address);
+        console.log("Private Key:", wallet.privateKey);
+        console.log("Mnemonic:", wallet.mnemonic.phrase);
 
 
 🎯 Phase 1: Web Interface (Month 1)
 
 Week 1: Basic React App
 
-npx create-react-app BMC1-Wallet-frontend
-cd BMC1-Wallet-frontend
-npm start
+    npx create-react-app BMC1-Wallet-frontend
+    cd BMC1-Wallet-frontend
+    npm start
 
 Week 2: Connect Wallet
 Add "Connect Wallet" button
@@ -108,40 +111,34 @@ Test derivation consistency
 
 Week 5-6: Migration Bundle Creation
 Create PQC-signed migration instruction
-
 Serialize and encrypt bundle
-
 Local storage management
 
 Week 7-8: Basic Recovery
 Load and verify migration bundle
-
 Execute simple key rotation
 
 Test recovery flow
 
 🎯 Phase 4: Distributed Storage (Month 5)
 Option A: IPFS Integration
-text
-npm install ipfs-http-client
+
+    npm install ipfs-http-client
+    
 Store encrypted bundles on IPFS
 
 Retrieve via content ID
-
 Pinning strategy
 
 Option B: Device Sync
 Sync between user's own devices
-
 Encrypted peer-to-peer transfer
 
 Conflict resolution
 
 Option C: Guardian Network
 Simple node network
-
 Encrypted storage with redundancy
-
 Retrieval protocol
 
 🎯 Phase 5: Automation & Polish (Month 6)
@@ -168,8 +165,9 @@ Getting Unstuck Guide
     "Module not found" errors
 
 Delete node_modules and package-lock.json
+and
 
-Run npm install again
+        npm install again
 
 Check Node.js version compatibility
 
@@ -190,4 +188,12 @@ Try different library
 Check browser compatibility
 
 Consider WebAssembly fallback
+
+Help Resources:
+Stack Overflow: Tag with [ethereum], [web3], [cryptography]
+Discord: Ethereum, MetaMask Dev, Crypto Dev
+GitHub Issues: Check existing issues in similar projects
+AI Assistants: ChatGPT, Claude, Gemini for code explanation
+see also:
+## 📄 research/Quantum_Threats.md
 
